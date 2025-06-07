@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://planeteafrica8.github.io/probable-palm-tree/sitemap.xml
