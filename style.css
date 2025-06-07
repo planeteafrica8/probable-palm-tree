@@ -1,0 +1,39 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+section {
+  padding: 20px;
+}
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+.social-icons img {
+  height: 24px;
+  margin: 0 5px;
+}
