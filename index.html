@@ -1,105 +1,61 @@
-<!DOCTYPE html><html lang="fr">
+
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Planète Africa - Maison de production audiovisuelle basée à Yaoundé. Productions: Héritiers, Juste pour elle, Le cousin d'à côté. Contact: +23768325213">
   <title>Planète Africa</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      color: #333;
-      scroll-behavior: smooth;
-    }header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-}
-
-header img {
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.section {
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.photo img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-h2 {
-  color: #000;
-}
-
-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-}
-
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>  <header>
-    <img src="logo.png" alt="Logo Planète Africa">
+<body>
+  <header>
     <nav>
-      <ul>
+      <div class="logo">
+        <img src="logo.png" alt="Logo Planète Africa" />
+      </div>
+      <ul class="menu">
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#realisations">Réalisations</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>  <section id="accueil" class="section">
-    <h2>Maison de production audiovisuelle - Yaoundé, Cameroun</h2>
-    <p>Bienvenue sur le site officiel de Planète Africa, une maison de production engagée dans la création de contenus culturels et cinématographiques en Afrique.</p>
-  </section>  <section id="apropos" class="section">
-    <div class="photo">
-      <img src="venceslas.jpg" alt="Venceslas Guedbigué">
+  </header>
+
+  <section id="accueil" class="hero">
+    <div class="overlay">
+      <h1>Planète Africa</h1>
+      <p>Maison de production audiovisuelle basée à Yaoundé</p>
     </div>
+  </section>
+
+  <section id="apropos" class="section">
     <h2>À propos du Directeur Général</h2>
-    <p><strong>Venceslas Guedbigué</strong>, âgé de seulement 26 ans, est le fondateur, producteur et réalisateur de la maison de production Planète Africa. Titulaire d'un diplôme en microbiologie, il a ensuite suivi une formation professionnelle en audiovisuel à Dakar. Sa passion pour le cinéma l'a conduit à créer des contenus culturels qui valorisent l'identité africaine.</p>
-  </section>  <section id="realisations" class="section">
-    <h2>Réalisations</h2>
+    <div class="photo-bio">
+      <img src="venceslas.jpg" alt="Venceslas Guedbigué" />
+      <p><strong>Venceslas Guedbigué</strong>, âgé de seulement 26 ans, est le fondateur, producteur et réalisateur de la maison de production Planète Africa. Titulaire d'un diplôme en microbiologie, il a ensuite suivi une formation professionnelle en audiovisuel à Dakar. Sa passion pour le cinéma l'a conduit à créer des contenus culturels qui mettent en valeur les réalités africaines.</p>
+    </div>
+  </section>
+
+  <section id="realisations" class="section">
+    <h2>Nos Réalisations</h2>
     <ul>
-      <li><strong>Héritiers</strong> – Série en cours</li>
-      <li><strong>Juste pour elle</strong></li>
-      <li><strong>Le cousin d'à côté</strong></li>
+      <li><strong>Héritiers</strong> (série en cours)</li>
+      <li><strong>Juste pour elle</strong> (film)</li>
+      <li><strong>Le cousin d'à côté</strong> (film)</li>
     </ul>
-  </section>  <section id="contact" class="section">
+  </section>
+
+  <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Pour tout projet ou partenariat, contactez-nous :</p>
     <p><strong>Téléphone :</strong> +237 683 25 21 3</p>
-    <p><strong>Email :</strong> contact@planeteafrica.com (à créer si nécessaire)</p>
-  </section>  <footer>
-    &copy; 2025 Planète Africa - Tous droits réservés.
-  </footer></body>
+    <p><strong>Email :</strong> contact@planeteafrica.com</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Planète Africa. Tous droits réservés.
+  </footer>
+</body>
 </html>
