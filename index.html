@@ -1,54 +1,135 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Planète Africa - Maison de production audiovisuelle à Yaoundé. Productions: Héritiers, Juste pour elle, Le cousin d'à côté. Contact: +23768325213">
-  <title>Planète Africa - Maison de Production</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="logo.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planète Africa</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #000;
+    }
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+    header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+    nav {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #e53935;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    img.director {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #aaa;
+      font-size: 14px;
+    }
+    .social-icons img {
+      width: 24px;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <img src="logo.png" alt="Logo Planète Africa" class="logo">
-    <nav class="navbar">
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">A propos</a></li>
-        <li><a href="#realisations">Réalisations</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>  <section id="accueil" class="section">
-    <h1>Bienvenue chez Planète Africa</h1>
-    <p>Maison de production audiovisuelle basée à Yaoundé, Cameroun.</p>
-  </section>  <section id="apropos" class="section">
-    <div class="photo">
-      <img src="venceslas.jpg" alt="Venceslas Guedbigué">
-    </div>
-    <div class="info">
-      <h2>À propos du Directeur Général</h2>
-      <p><strong>Venceslas Guedbigué</strong>, 26 ans, est le fondateur, producteur et réalisateur de Planète Africa. Diplômé en microbiologie, il a également suivi une formation professionnelle en audiovisuel à Dakar. Sa passion pour le cinéma l'a poussé à créer des contenus culturels mettant en valeur les réalités africaines. Il est à l'origine de plusieurs productions originales saluées pour leur authenticité et leur impact social.</p>
-    </div>
-  </section>  <section id="realisations" class="section">
-    <h2>Nos Réalisations</h2>
-    <ul>
-      <li><strong>Héritiers</strong> (série en cours)</li>
-      <li><strong>Juste pour elle</strong> (film)</li>
-      <li><strong>Le cousin d'à côté</strong> (film)</li>
-    </ul>
-  </section>  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Pour toute collaboration, diffusion ou production :</p>
-    <p><strong>Téléphone :</strong> +237 683 25 21 3</p>
-    <p><strong>Email :</strong> contact@planeteafrica.com</p>
-    <div class="socials">
-      <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
-      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-      <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-      <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
-    </div>
-  </section>  <footer>
-    &copy; 2025 Planète Africa. Tous droits réservés.
-  </footer>
+
+<header>
+  <img src="logo.png" alt="Logo Planète Africa" />
+  <h1>Planète Africa</h1>
+</header>
+
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#apropos">À propos</a>
+  <a href="#realisations">Réalisations</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="accueil">
+  <h2>Bienvenue chez Planète Africa</h2>
+  <p>Maison de production audiovisuelle basée à Yaoundé, Cameroun.</p>
+</section>
+
+<section id="apropos">
+  <h2>À propos du Directeur Général</h2>
+  <p>
+    <strong>Venceslas Guedbigué</strong>, 26 ans, est le fondateur, producteur et réalisateur de Planète Africa.
+    Diplômé en microbiologie, il a également suivi une formation professionnelle en audiovisuel à Dakar.
+    Sa passion pour le cinéma l’a poussé à créer des contenus culturels mettant en valeur les réalités africaines.
+    Il est à l’origine de plusieurs productions originales saluées pour leur authenticité et leur impact social.
+  </p>
+  <img src="venceslas.jpg" alt="Venceslas Guedbigué" class="director" />
+</section>
+
+<section id="realisations">
+  <h2>Nos Réalisations</h2>
+  <ul>
+    <li><strong>Héritiers</strong> (série en cours)</li>
+    <li><strong>Juste pour elle</strong> (film)</li>
+    <li><strong>Le cousin d’à côté</strong> (film)</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Pour toute collaboration, diffusion ou production :</p>
+  <p><strong>Téléphone :</strong> +237 683 25 21 3</p>
+  <p><strong>Email :</strong> contact@planeteafrica.com</p>
+  <div class="social-icons">
+    <a href="#"><img src="whatsapp.png" alt="WhatsApp" /></a>
+    <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+    <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+    <a href="#"><img src="linkedin.png" alt="LinkedIn" /></a>
+    <a href="#"><img src="youtube.png" alt="YouTube" /></a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Planète Africa. Tous droits réservés.
+</footer>
+
 </body>
 </html>
