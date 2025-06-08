@@ -1,135 +1,81 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Planète Africa</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #000;
-    }
-    header img {
-      height: 60px;
-      margin-right: 15px;
-    }
-    header h1 {
-      font-size: 28px;
-      margin: 0;
-    }
-    nav {
-      background-color: #000;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      color: #e53935;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-    img.director {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 20px auto;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #000;
-      color: #aaa;
-      font-size: 14px;
-    }
-    .social-icons img {
-      width: 24px;
-      margin: 0 5px;
-      vertical-align: middle;
-    }
-  </style>
+  <meta name="description" content="Site officiel de Planète Africa, maison de production audiovisuelle basée à Yaoundé. Découvrez nos services, nos réalisations, notre équipe et restez informés de nos actualités.">
+  <title>Planète Africa - Du rêve à la réalité</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-
-<header>
-  <img src="logo.png" alt="Logo Planète Africa" />
-  <h1>Planète Africa</h1>
-</header>
-
-<nav>
-  <a href="#accueil">Accueil</a>
-  <a href="#apropos">À propos</a>
-  <a href="#realisations">Réalisations</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="accueil">
-  <h2>Bienvenue chez Planète Africa</h2>
-  <p>Maison de production audiovisuelle basée à Yaoundé, Cameroun.</p>
-</section>
-
-<section id="apropos">
+  <header class="bg-dark text-white p-3 d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <img src="logo.png" alt="Logo Planète Africa" style="height: 50px; margin-right: 15px;" />
+      <h1 class="h4 m-0">Planète Africa <small class="d-block" style="font-size: 0.7em;">Du rêve à la réalité</small></h1>
+    </div>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#apropos">À propos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#actualites">Actualités</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#services">Nos services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#projets">Projets</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>  <main class="container mt-5">
+    <section id="accueil">
+      <h2 class="text-center">Bienvenue chez Planète Africa</h2>
+    </section><section id="apropos" class="mt-5">
   <h2>À propos du Directeur Général</h2>
   <p>
-    <strong>Venceslas Guedbigué</strong>, 26 ans, est le fondateur, producteur et réalisateur de Planète Africa.
-    Diplômé en microbiologie, il a également suivi une formation professionnelle en audiovisuel à Dakar.
-    Sa passion pour le cinéma l’a poussé à créer des contenus culturels mettant en valeur les réalités africaines.
-    Il est à l’origine de plusieurs productions originales saluées pour leur authenticité et leur impact social.
+    Venceslas Guedbigué est le Directeur général de la maison de production Planète Africa, basée à Yaoundé.
+    Il incarne l'excellence et l'engagement dans le domaine de l'audiovisuel. Grâce à sa vision, Planète Africa a réalisé des œuvres marquantes telles que <strong>Héritiers</strong>, <strong>Juste pour elle</strong> et <strong>Le cousin d'à côté</strong>.
   </p>
-  <img src="venceslas.jpg" alt="Venceslas Guedbigué" class="director" />
-</section>
-
-<section id="realisations">
-  <h2>Nos Réalisations</h2>
-  <ul>
-    <li><strong>Héritiers</strong> (série en cours)</li>
-    <li><strong>Juste pour elle</strong> (film)</li>
-    <li><strong>Le cousin d’à côté</strong> (film)</li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Pour toute collaboration, diffusion ou production :</p>
-  <p><strong>Téléphone :</strong> +237 683 25 21 3</p>
-  <p><strong>Email :</strong> contact@planeteafrica.com</p>
-  <div class="social-icons">
-    <a href="#"><img src="whatsapp.png" alt="WhatsApp" /></a>
-    <a href="#"><img src="facebook.png" alt="Facebook" /></a>
-    <a href="#"><img src="instagram.png" alt="Instagram" /></a>
-    <a href="#"><img src="linkedin.png" alt="LinkedIn" /></a>
-    <a href="#"><img src="youtube.png" alt="YouTube" /></a>
+  <div class="text-center mt-3">
+    <img src="venceslas.jpg" alt="Venceslas Guedbigué" class="img-fluid rounded shadow" style="max-width: 300px;" />
   </div>
 </section>
 
-<footer>
-  © 2025 Planète Africa. Tous droits réservés.
-</footer>
+<section id="actualites" class="mt-5">
+  <h2>Actualités</h2>
+  <p>Articles sur les acteurs, les coulisses et les nouveautés à venir seront publiés ici.</p>
+</section>
 
+<section id="services" class="mt-5">
+  <h2>Nos Services</h2>
+  <ul>
+    <li>Réalisation de clips audiovisuels</li>
+    <li>Production de films et séries</li>
+    <li>Photo shooting professionnel</li>
+    <li>Montage et postproduction</li>
+    <li>Conception de publicités et reportages</li>
+  </ul>
+</section>
+
+<section id="projets" class="mt-5">
+  <h2>Nos Projets</h2>
+  <ul>
+    <li><strong>Héritiers</strong> (série en cours)</li>
+    <li><strong>Juste pour elle</strong></li>
+    <li><strong>Le cousin d'à côté</strong></li>
+  </ul>
+</section>
+
+<section id="contact" class="mt-5 mb-5">
+  <h2>Contact</h2>
+  <p>Téléphone : <a href="tel:+23768325213">+237 683 25 21 3</a></p>
+  <div class="d-flex gap-3">
+    <a href="https://wa.me/message/G7PVRCVILYTJD1" class="text-success" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100085668152798" class="text-primary" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="https://www.instagram.com/planeteafricaa/profilecard/?igsh=MWsyenhpNDV2NWxzYg==" class="text-danger" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+  </div>
+</section>
+
+  </main>  <footer class="bg-dark text-white text-center p-3">
+    <small>&copy; 2025 Planète Africa. Tous droits réservés.</small>
+  </footer>
 </body>
 </html>
