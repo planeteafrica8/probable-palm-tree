@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planète Africa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+    }
+
+    .slogan {
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #111;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      border-top: 1px solid #333;
+    }
+
+    nav a:hover {
+      background-color: #222;
+    }
+
+    .menu-toggle {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .main {
+      padding: 2rem;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media(min-width: 768px) {
+      nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        background-color: black;
+      }
+
+      nav a {
+        border: none;
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="logo">Planète Africa</div>
+    <div class="slogan">Du rêve à la réalité</div>
+  </div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="navbar">
+  <a href="#">Accueil</a>
+  <a href="#">À propos</a>
+  <a href="#">Actualités</a>
+  <a href="#">Nos services</a>
+  <a href="#">Projets</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="main">
+  <h1>Bienvenue chez Planète Africa</h1>
+  <p>La maison de production qui transforme vos rêves en réalité.</p>
+  <h2>Contact</h2>
+  <p>Téléphone : <a href="tel:689325213">689325213</a></p>
+  <p>WhatsApp : <a href="https://wa.me/689325213" target="_blank">Écrire sur WhatsApp</a></p>
+  <p>Email : <a href="mailto:planeteafrica8@gmail.com">planeteafrica8@gmail.com</a></p>
+
+</div>
+
+<footer>
+  © 2025 Planète Africa. Tous droits réservés.
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navbar');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script>
+
+
+<footer>
+  Du rêve à la réalité
+  <div style="margin-top: 0.5rem;">
+    <a href="https://www.facebook.com/profile.php?id=100085668152798" target="_blank" style="color: white; margin: 0 0.5rem;"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/planeteafricaa/profilecard/?igsh=MWsyenhpNDV2NWxzYg==" target="_blank" style="color: white; margin: 0 0.5rem;"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.threads.net/@planeteafricaa" target="_blank" style="color: white; margin: 0 0.5rem;"><i class="fab fa-threads"></i></a>
+  </div>
+</footer>
+
+<div style="text-align: center; padding: 1rem;">
+  <a href="https://wa.me/689325213" target="_blank" style="background-color: green; color: white; padding: 0.7rem 1.2rem; border-radius: 5px; text-decoration: none; margin: 0.5rem;">WhatsApp</a>
+  <a href="tel:689325213" style="background-color: #007BFF; color: white; padding: 0.7rem 1.2rem; border-radius: 5px; text-decoration: none; margin: 0.5rem;">Appeler</a>
+</div>
+</body>
+</html>
