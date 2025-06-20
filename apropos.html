@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>À propos - Planète Africa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="Logo Planète Africa" style="height:50px;"></div>
+    <div class="slogan">Du rêve à la réalité</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+  <nav id="navbar">
+    <a href="index.html">Accueil</a>
+    <a href="apropos.html">À propos</a>
+    <a href="actualites.html">Actualités</a>
+    <a href="services.html">Nos services</a>
+    <a href="projets.html">Projets</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <h1>À propos de Planète Africa</h1>
+    <p>Planète Africa est une maison de production audiovisuelle basée à Yaoundé, au Cameroun. 
+    Notre mission est de mettre en lumière les talents africains, valoriser la culture à travers le cinéma, les séries, les documentaires et les clips vidéo.</p>
+    <p>Nous accompagnons les projets audiovisuels de l’idée à la diffusion, avec passion, rigueur et professionnalisme.</p>
+  </main>
+  <footer>
+    © 2025 Planète Africa. Tous droits réservés.
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navbar');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</body>
+</html>
