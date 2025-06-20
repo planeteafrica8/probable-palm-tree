@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Actualités - Planète Africa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .article-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: #fff;
+      text-align: center;
+    }
+    .article-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    .article-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .article-card p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .article-card a.button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="Logo Planète Africa" style="height:50px;"></div>
+    <div class="slogan">Du rêve à la réalité</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+  <nav id="navbar">
+    <a href="index.html">Accueil</a>
+    <a href="apropos.html">À propos</a>
+    <a href="actualites.html">Actualités</a>
+    <a href="services.html">Nos services</a>
+    <a href="projets.html">Projets</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1 style="text-align:center;">📰 Nos Actualités</h1>
+    <div class="articles">
+      <div class="article-card">
+        <img src="Annabelle.jpg" alt="Portrait Anabelle">
+        <h3>Portrait de Tchida Fopi Anabelle Florile</h3>
+        <p>Une étoile montante révélée par la série Héritiers. Découvrez son histoire, sa vision du cinéma et ses débuts prometteurs.</p>
+        <a href="anabelle.html" class="button">Lire l’article</a>
+      </div>
+    </div>
+  </main>
+
+  <footer style="text-align:center; padding:1rem; background:#f0f0f0;">
+    © 2025 Planète Africa. Tous droits réservés.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navbar');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</body>
+</html>
