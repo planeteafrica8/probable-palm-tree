@@ -6,32 +6,64 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
       margin: 0;
+      font-family: 'Arial', sans-serif;
       background-color: #fff;
       color: #333;
     }
     header {
-      background-color: #222;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+      background-color: #000;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
     }
     .logo {
-      width: 80px;
-      height: auto;
+      height: 50px;
     }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
+    .brand {
+      text-align: left;
+      flex-grow: 1;
+      margin-left: 10px;
     }
-    nav ul li a {
-      color: #fff;
+    .brand h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .brand p {
+      margin: 0;
+      font-size: 12px;
+      color: #ccc;
+    }
+    nav {
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #000;
+      display: none;
+      flex-direction: column;
+      border-radius: 4px;
+    }
+    nav a {
+      color: white;
       text-decoration: none;
-      font-weight: bold;
+      padding: 10px;
+      border-top: 1px solid #444;
+    }
+    .menu-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 24px;
+    }
+    .menu-toggle:focus {
+      outline: none;
+    }
+    .show-menu {
+      display: flex !important;
     }
     main {
       max-width: 800px;
@@ -76,21 +108,27 @@
       background-color: #a30000;
     }
   </style>
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show-menu");
+    }
+  </script>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Logo Planète Africa" class="logo">
-    <h1>Planète Africa</h1>
-    <p class="slogan">Du rêve à la réalité</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="apropos.html">À propos</a></li>
-        <li><a href="actualites.html">Actualités</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div class="brand">
+      <h1>Planète Africa</h1>
+      <p>Du rêve à la réalité</p>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="services.html">Services</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>  <main class="article">
     <h2>Portrait de Pondi Rachel Eugénie Flore – Une Voix du Cinéma Camerounais</h2>
