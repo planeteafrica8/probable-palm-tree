@@ -1,46 +1,207 @@
-<main class="article">
-  <h1>🎬 Portrait de Behoumie Rosario Slavia – L’Engagement au Service du Cinéma Camerounais</h1>
-  <img src="rosario.jpg" alt="Photo de Rosario">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portrait de Rosario | Planète Africa</title>
+  <meta name="description" content="Portrait de Behoumie Rosario Slavia, actrice dans la série Héritiers - Planète Africa">
+  <meta property="og:title" content="Portrait de Behoumie Rosario Slavia">
+  <meta property="og:description" content="Découvrez le parcours de Rosario, actrice dans la série Héritiers, produite par Planète Africa.">
+  <meta property="og:image" content="https://planeteafrica8.github.io/probable-palm-tree/rosario.jpg">
+  <meta property="og:url" content="https://planeteafrica8.github.io/probable-palm-tree/rosario.html">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <p><span class="bold">Nom complet :</span> Behoumie Rosario Slavia</p>
-  <p><span class="bold">Date de naissance :</span> 16 janvier 1992</p>
-  <p><span class="bold">Nationalité :</span> Camerounaise</p>
-  <p><span class="bold">Ville de naissance :</span> Yaoundé</p>
-  <p><span class="bold">Ville de résidence :</span> Yaoundé</p>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #000;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+    .logo {
+      height: 50px;
+    }
+    .brand {
+      text-align: left;
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .brand p {
+      margin: 0;
+      font-size: 12px;
+      color: #ccc;
+    }
+    nav {
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #000;
+      display: none;
+      flex-direction: column;
+      border-radius: 4px;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-top: 1px solid #444;
+    }
+    .menu-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 24px;
+    }
+    .menu-toggle:focus {
+      outline: none;
+    }
+    .show-menu {
+      display: flex !important;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+    h1 {
+      color: #c0392b;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #cc0000;
+    }
+    .article img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .article p {
+      line-height: 1.7;
+    }
+    .bold { font-weight: 600; }
+    blockquote {
+      font-style: italic;
+      color: #555;
+      margin: 20px 0;
+      padding-left: 15px;
+      border-left: 3px solid #cc0000;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .article-links a {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 10px;
+      background-color: #e74c3c;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
 
-  <h2>🌟 Une vocation révélée tardivement, mais assumée avec intensité</h2>
-  <p>Contrairement à beaucoup d’acteurs qui rêvent très tôt de projecteurs, Rosario découvre sa passion pour le cinéma à l’âge adulte. Pourtant, dès sa première expérience, une évidence s’impose : elle est née pour jouer.</p>
-  <p>Elle fait ses débuts en 2022 dans le court métrage <strong>"Red Love"</strong>, où elle interprète une enseignante confrontée à un dilemme moral. Ce rôle modeste, mais puissant, la pousse à poursuivre dans cette voie, malgré les difficultés du milieu.</p>
+  <header>
+    <img src="logo.png" alt="Logo Planète Africa" class="logo">
+    <div class="brand">
+      <h1>Planète Africa</h1>
+      <p>Du rêve à la réalité</p>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="services.html">Services</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <h2>🎥 Des rôles ancrés dans le réel</h2>
-  <p>Depuis son premier tournage, Rosario ne cesse de progresser et d’explorer différents registres :</p>
-  <ul>
-    <li><strong>2023 :</strong> <em>"Mon passé, mon présent"</em> – Elle incarne une grande sœur protectrice marquée par un lourd secret familial.</li>
-    <li><strong>2025 :</strong> <em>"Les filets du mariage"</em> – Un rôle bouleversant de femme trahie qui tente de se reconstruire.</li>
-    <li>Elle apparaît également dans les séries <em>"Pouvoir et loi"</em> et <em>"Indomptable"</em> réalisées par Thomas Nguijol.</li>
-  </ul>
+  <main class="article">
+    <h1>🎬 Portrait de Behoumie Rosario Slavia – L’Engagement au Service du Cinéma Camerounais</h1>
+    <img src="rosario.jpg" alt="Photo de Rosario">
+    <p><span class="bold">Nom complet :</span> Behoumie Rosario Slavia</p>
+    <p><span class="bold">Date de naissance :</span> 16 janvier 1992</p>
+    <p><span class="bold">Nationalité :</span> Camerounaise</p>
+    <p><span class="bold">Première apparition :</span> "Red Love" (2022), court métrage produit par Waj Prada</p>
+    <p>Avec une prestance calme et une détermination discrète, Behoumie Rosario Slavia s’impose comme l’une des actrices les plus authentiques et engagées de sa génération.</p>
 
-  <h2>🎭 Une juge dans "Héritiers" : le rôle de la maturité</h2>
-  <p>Dans la série <strong>"Héritiers"</strong>, Rosario interprète Lucia, une juge ferme, humaine et incorruptible. Ce personnage incarne son combat personnel : la justice, la vérité et la dignité.</p>
-  <blockquote>« Lucia, c’est moi dans ce que j’ai de plus fort. C’est une femme droite, mais aussi une femme blessée. »</blockquote>
+    <h2>🌟 Des débuts sincères et prometteurs</h2>
+    <p>Elle fait ses débuts dans le court métrage <strong>"Red Love"</strong> (2022), où elle incarne une enseignante. Une première expérience fondatrice.</p>
+    <ul>
+      <li><strong>2023 :</strong> "Mon passé, mon présent"</li>
+      <li><strong>2025 :</strong> "Les filets du mariage"</li>
+      <li>Figurations : "Pouvoir et loi", "Indomptable"</li>
+    </ul>
 
-  <h2>🎤 Une actrice engagée et lucide</h2>
-  <p>Pour Rosario, le cinéma n’est pas seulement un art, c’est un outil d’éducation et de transformation sociale. Elle choisit ses rôles pour les messages qu’ils portent.</p>
-  <blockquote>« Je veux qu’on se souvienne de moi comme d’une actrice qui joue vrai. Pas pour plaire, mais pour dire ce que les autres taisent. »</blockquote>
+    <h2>🎭 Dans la série "Héritiers"</h2>
+    <p>Rosario incarne <strong>Lucia</strong>, une juge ferme et intègre. Un rôle fort et symbolique.</p>
+    <blockquote>« Cette série représente une opportunité d'aller encore plus loin dans le cinéma. »</blockquote>
 
-  <h2>💬 Un message d’humilité et de persévérance</h2>
-  <p>Rosario n’oublie pas d’où elle vient. Elle reste proche de son public, reconnaissante envers l’équipe de <strong>Planète Africa</strong> qui l’a révélée, et lucide sur le chemin qu’il lui reste à parcourir.</p>
-  <blockquote>« Merci à tous ceux qui me soutiennent. J’avance pas à pas. Mais je n’abandonnerai jamais. »</blockquote>
+    <h2>💬 Son message</h2>
+    <blockquote>« Le public devrait regarder cette série non pas pour le plaisir, mais pour les leçons de vie. »</blockquote>
+    <blockquote>« Merci pour l’amour et les mots d’encouragement. »</blockquote>
 
-  <div class="article-links">
-    <a href="anabelle.html">← Lire l'article précédent : Anabelle</a>
-    <a href="rachel.html">← Lire aussi : Rachel</a>
-  </div>
+    <div class="article-links">
+      <a href="anabelle.html">← Lire l'article précédent : Anabelle</a>
+      <a href="rachel.html">← Lire aussi : Rachel</a>
+    </div>
 
-  <div class="contact-links">
-    <p>📧 <a href="mailto:planeteafrica8@gmail.com">planeteafrica8@gmail.com</a></p>
-    <p>📱 <a href="https://wa.me/237689325213">Discuter sur WhatsApp</a></p>
-  </div>
+    <div class="contact-links">
+      <p>📧 <a href="mailto:planeteafrica8@gmail.com">planeteafrica8@gmail.com</a></p>
+      <p>📱 <a href="https://wa.me/237689325213">Discuter sur WhatsApp</a></p>
+    </div>
 
-  <div id="disqus_thread"></div>
-</main>
+    <!-- 🗨️ Section Commentaires Disqus -->
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = 'https://planeteafrica8.github.io/probable-palm-tree/rosario.html';
+        this.page.identifier = 'rosario';
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://planeteafrica.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+  </main>
+
+  <footer>
+    © 2025 Planète Africa. Tous droits réservés.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show-menu");
+    }
+  </script>
+</body>
+</html>
