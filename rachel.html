@@ -1,26 +1,21 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ18T1G119"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WJ18T1G119');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portrait de Rachel Pondi – Planète Africa</title>
-  <link rel="stylesheet" href="style.css">  <!-- Balises Open Graph pour réseaux sociaux -->  <meta property="og:title" content="Portrait de Rachel Pondi – Une voix du cinéma camerounais">
-  <meta property="og:description" content="Découvrez le parcours inspirant de Rachel Pondi, actrice passionnée révélée par la série Héritiers, produite par Planète Africa.">
+  <title>Portrait de Pondi Rachel Eugénie Flore | Planète Africa</title>
+  <meta name="description" content="Portrait de Pondi Rachel Eugénie Flore, actrice dans la série Héritiers - Planète Africa">
+  <meta property="og:title" content="Portrait de Pondi Rachel Eugénie Flore">
+  <meta property="og:description" content="Découvrez le portrait de Rachel Pondi, actrice passionnée révélée par la série Héritiers, produite par Planète Africa.">
   <meta property="og:image" content="https://planeteafrica8.github.io/probable-palm-tree/rachel.jpg">
   <meta property="og:url" content="https://planeteafrica8.github.io/probable-palm-tree/rachel.html">
-  <meta property="og:type" content="article">  <style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #fff;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
       color: #333;
     }
     header {
@@ -57,6 +52,7 @@
       display: none;
       flex-direction: column;
       border-radius: 4px;
+      z-index: 1000;
     }
     nav a {
       color: white;
@@ -78,21 +74,30 @@
       display: flex !important;
     }
     main {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
     }
-    .article img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 12px;
-      display: block;
-      margin: 20px auto;
+    h1 {
+      color: #c0392b;
+      font-size: 28px;
+      margin-bottom: 20px;
     }
     h2 {
       color: #cc0000;
-      text-align: center;
     }
+    .article img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .article p {
+      line-height: 1.7;
+    }
+    .bold { font-weight: 600; }
     blockquote {
       font-style: italic;
       color: #555;
@@ -104,27 +109,22 @@
       background-color: #222;
       color: #fff;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       margin-top: 40px;
     }
-    a.btn {
+    .article-links a {
       display: inline-block;
-      margin-top: 20px;
-      background-color: #cc0000;
-      color: #fff;
-      padding: 10px 16px;
-      text-decoration: none;
+      margin: 10px 5px;
+      padding: 10px;
+      background-color: #e74c3c;
+      color: white;
       border-radius: 5px;
+      text-decoration: none;
     }
-    a.btn:hover {
-      background-color: #a30000;
-    }
-  </style>  <script>
-    function toggleMenu() {
-      document.getElementById("nav-links").classList.toggle("show-menu");
-    }
-  </script></head>
+  </style>
+</head>
 <body>
+
   <header>
     <img src="logo.png" alt="Logo Planète Africa" class="logo">
     <div class="brand">
@@ -134,44 +134,79 @@
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav id="nav-links">
       <a href="index.html">Accueil</a>
-      <a href="apropos.html">À propos</a>
+      <a href="apropos.html">À propos</a>
       <a href="actualites.html">Actualités</a>
       <a href="services.html">Services</a>
       <a href="projets.html">Projets</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>  <main class="article">
-    <h2>Portrait de Pondi Rachel Eugénie Flore – Une Voix du Cinéma Camerounais</h2>
-    <img src="rachel.jpg" alt="Rachel Pondi"><p><strong>Nom complet :</strong> Pondi Rachel Eugénie Flore<br>
-<strong>Date de naissance :</strong> 16 septembre 1990<br>
-<strong>Nationalité :</strong> Camerounaise<br>
-<strong>Ville de naissance :</strong> Makak<br>
-<strong>Ville de résidence :</strong> Yaoundé</p>
+  </header>
 
-<h3>🌟 Une artiste forgée par la passion</h3>
-<p>Rachel débute en 2022 dans le film <em>"Déchéance"</em> réalisé par Emmanuel Mabou, où elle incarne un agent des affaires sociales. Une première expérience marquante qui révèle son potentiel artistique.</p>
+<main class="article">
+  <h1>🎬 Portrait de Pondi Rachel Eugénie Flore – Une Voix du Cinéma Camerounais</h1>
+  <img src="rachel.jpg" alt="Rachel Pondi">
+  <p><span class="bold">Nom complet :</span> Pondi Rachel Eugénie Flore</p>
+  <p><span class="bold">Date de naissance :</span> 16 septembre 1990</p>
+  <p><span class="bold">Nationalité :</span> Camerounaise</p>
+  <p><span class="bold">Ville de naissance :</span> Makak</p>
+  <p><span class="bold">Ville de résidence :</span> Yaoundé</p>
 
-<p>Elle participe à plusieurs courts-métrages, notamment une comédie sur les Lions Indomptables et un film sur la Saint-Valentin réalisé par Armel Nde. Des expériences qui la confortent dans sa vocation d'actrice.</p>
+  <h2>🌟 Une artiste forgée par la passion</h2>
+  <p>Rachel débute en 2022 dans le film <em>"Déchéance"</em> réalisé par Emmanuel Mabou, où elle incarne un agent des affaires sociales. Une première expérience marquante qui révèle son potentiel artistique.</p>
+  <p>Elle participe à plusieurs courts-métrages, notamment une comédie sur les Lions Indomptables et un film sur la Saint-Valentin réalisé par Armel Nde. Des expériences qui la confortent dans sa vocation d'actrice.</p>
 
-<h3>🎥 Rôle dans "Héritiers"</h3>
-<p>Dans la série <strong>Héritiers</strong>, elle joue Rachel, une femme trahie mais déterminée à reconstruire sa vie pour le bien de ses enfants. Un rôle qu'elle interprète avec émotion et force.</p>
+  <h2>🎥 Rôle dans "Héritiers"</h2>
+  <p>Dans la série <strong>Héritiers</strong>, elle joue Rachel, une femme trahie mais déterminée à reconstruire sa vie pour le bien de ses enfants. Un rôle qu'elle interprète avec émotion et force.</p>
 
-<blockquote>"J'aime ce personnage de Rachel, cette femme très déterminée, forte et courageuse."</blockquote>
+  <blockquote>"J'aime ce personnage de Rachel, cette femme très déterminée, forte et courageuse."</blockquote>
 
-<h3>🎤 Une vision engagée du cinéma</h3>
-<p>Rachel voit le cinéma comme un moyen d'exprimer ce qu'elle garde en elle, d'incarner des réalités silencieuses et de toucher le public par des personnages sincères.</p>
+  <h2>🎤 Une vision engagée du cinéma</h2>
+  <p>Rachel voit le cinéma comme un moyen d'exprimer ce qu'elle garde en elle, d'incarner des réalités silencieuses et de toucher le public par des personnages sincères.</p>
 
-<blockquote>"Le cinéma me permet de dire ce que je garde au fond de moi... N'étant pas très bavarde, je le fais dans ce personnage."</blockquote>
+  <blockquote>"Le cinéma me permet de dire ce que je garde au fond de moi... N'étant pas très bavarde, je le fais dans ce personnage."</blockquote>
 
-<h3>💬 Message au public</h3>
-<p>Elle appelle le public à continuer de croire en elle, en leur équipe et dans le travail qu'ils mènent depuis 2022. Elle promet de ne pas les décevoir.</p>
+  <h2>💬 Message au public</h2>
+  <p>Elle appelle le public à continuer de croire en elle, en leur équipe et dans le travail qu'ils mènent depuis 2022. Elle promet de ne pas les décevoir.</p>
 
-<blockquote>"Travaillez. L'argent et le succès vous trouveront sur le chemin. Ne baissez jamais les bras."</blockquote>
+  <blockquote>"Travaillez. L'argent et le succès vous trouveront sur le chemin. Ne baissez jamais les bras."</blockquote>
 
-<p><a href="anabelle.html" class="btn">← Voir l'article précédent : Tchida Fopi Anabelle</a></p>
+  <div class="article-links">
+    <a href="anabelle.html">← Lire l'article précédent : Anabelle</a>
+    <a href="rosario.html">← Lire aussi : Rosario</a>
+  </div>
 
-  </main>  <footer>
-    <p>© 2025 Planète Africa. Tous droits réservés.</p>
-  </footer>
+  <div class="contact-links">
+    <p>📱 <a href="https://wa.me/237689325213">Discuter sur WhatsApp</a></p>
+  </div>
+</main>
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://planeteafrica8.github.io/probable-palm-tree/anabelle.html';
+      this.page.identifier = 'anabelle';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://planeteafrica8.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>
+    Veuillez activer JavaScript pour voir les 
+    <a href="https://disqus.com/?ref_noscript">commentaires propulsés par Disqus.</a>
+  </noscript>
+
+<footer>
+  © 2025 Planète Africa. Tous droits réservés.
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('nav-links');
+    nav.classList.toggle('show-menu');
+  }
+</script>
 </body>
 </html>
