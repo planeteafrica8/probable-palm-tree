@@ -1,82 +1,200 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ18T1G119"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WJ18T1G119');
-</script>
   <meta charset="UTF-8">
-  <title>Portrait de Tchida Fopi Anabelle Florile - Planète Africa</title>
-  <meta name="description" content="Découvrez le portrait de Tchida Fopi Anabelle Florile, étoile montante du cinéma camerounais, révélée dans la série Héritiers.">
-  <meta property="og:title" content="Portrait de Tchida Fopi Anabelle Florile - Planète Africa">
-  <meta property="og:description" content="Découvrez le portrait de Tchida Fopi Anabelle Florile, étoile montante du cinéma camerounais, révélée dans la série Héritiers.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portrait de Tchida Fopi Anabelle Florile | Planète Africa</title>
+  <meta name="description" content="Portrait de Tchida Fopi Anabelle Florile, actrice dans la série Héritiers - Planète Africa">
+  <meta property="og:title" content="Portrait de Tchida Fopi Anabelle Florile">
+  <meta property="og:description" content="Découvrez le portrait de Tchida Fopi Anabelle Florile, actrice dans la série Héritiers, produite par Planète Africa.">
   <meta property="og:image" content="https://planeteafrica8.github.io/probable-palm-tree/Annabelle.jpg">
   <meta property="og:url" content="https://planeteafrica8.github.io/probable-palm-tree/anabelle.html">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #000;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+    .logo {
+      height: 50px;
+    }
+    .brand {
+      text-align: left;
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .brand p {
+      margin: 0;
+      font-size: 12px;
+      color: #ccc;
+    }
+    nav {
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #000;
+      display: none;
+      flex-direction: column;
+      border-radius: 4px;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-top: 1px solid #444;
+    }
+    .menu-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 24px;
+    }
+    .menu-toggle:focus {
+      outline: none;
+    }
+    .show-menu {
+      display: flex !important;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+    h1 {
+      color: #c0392b;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #cc0000;
+    }
+    .article img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .article p {
+      line-height: 1.7;
+    }
+    .bold { font-weight: 600; }
+    blockquote {
+      font-style: italic;
+      color: #555;
+      margin: 20px 0;
+      padding-left: 15px;
+      border-left: 3px solid #cc0000;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .article-links a {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 10px;
+      background-color: #e74c3c;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="logo"><img src="logo.png" alt="Logo Planète Africa" style="height:50px;"></div>
-    <div class="slogan">Du rêve à la réalité</div>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  </header>
-  <nav id="navbar">
-    <a href="index.html">Accueil</a>
-    <a href="apropos.html">À propos</a>
-    <a href="actualites.html">Actualités</a>
-    <a href="services.html">Nos services</a>
-    <a href="projets.html">Projets</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <h1>🎬 Portrait de Tchida Fopi Anabelle Florile – Une Étoile Montante du Cinéma Camerounais</h1>
-    <img src="Annabelle.jpg" alt="Tchida Fopi Anabelle Florile" style="max-width:100%; height:auto; border-radius:10px; margin-bottom:1rem;">
-    <p><strong>Nom complet :</strong> Tchida Fopi Anabelle Florile</p>
-    <p><strong>Date de naissance :</strong> 30 décembre 2001</p>
-    <p><strong>Nationalité :</strong> Camerounaise</p>
-    <p><strong>Première apparition :</strong> Série Héritiers, produite par Planète Africa et réalisée par Venceslas Guedbigué (Venzy)</p>
 
-    <h2>🌟 Une première expérience pleine de promesse</h2>
-    <p>Avec un regard profond et un sourire confiant, Tchida Anabelle s'impose déjà comme l’une des figures prometteuses du cinéma camerounais. 
+  <header>
+    <img src="logo.png" alt="Logo Planète Africa" class="logo">
+    <div class="brand">
+      <h1>Planète Africa</h1>
+      <p>Du rêve à la réalité</p>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="services.html">Services</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<main class="article">
+  <h1>🎬 Portrait de Tchida Fopi Anabelle Florile – Une Étoile Montante du Cinéma Camerounais</h1>
+  <img src="Annabelle.jpg" alt="Tchida Fopi Anabelle Florile">
+  <p><span class="bold">Nom complet :</span> Tchida Fopi Anabelle Florile</p>
+  <p><span class="bold">Date de naissance :</span> 30 décembre 2001</p>
+  <p><span class="bold">Nationalité :</span> Camerounaise</p>
+  <p><span class="bold">Première apparition :</span> Série Héritiers, produite par Planète Africa et réalisée par Venceslas Guedbigué (Venzy)</p>
+
+  <h2>🌟 Une première expérience pleine de promesse</h2>
+  <p>Avec un regard profond et un sourire confiant, Tchida Anabelle s'impose déjà comme l’une des figures prometteuses du cinéma camerounais. 
     Née le 30 décembre 2001, cette jeune actrice fait ses premiers pas dans l’univers cinématographique grâce à la série à succès "Héritiers", 
     une production signée Planète Africa, sous la direction de Venzy, réalisateur reconnu pour sa vision audacieuse et humaine.</p>
-
-    <p>Loin d’être intimidée par ses débuts, Anabelle embrasse avec passion son tout premier rôle à l’écran. 
+  <p>Loin d’être intimidée par ses débuts, Anabelle embrasse avec passion son tout premier rôle à l’écran. 
     Sa performance dans Héritiers ne passe pas inaperçue, révélant une actrice pleine de sensibilité, d’émotion et d'authenticité.</p>
 
-    <blockquote>🎤 « Le monde du cinéma est un moyen pour les acteurs et actrices d'exprimer de l'amour, la peine, et les problèmes que endure la société. » – Tchida Fopi Anabelle Florile</blockquote>
+  <blockquote>🎤 « Le monde du cinéma est un moyen pour les acteurs et actrices d'exprimer de l'amour, la peine, et les problèmes que endure la société. »</blockquote>
 
-    <h2>🎭 Un choix de cœur et de vocation</h2>
-    <p>Portée par un désir sincère d’explorer les réalités de la vie à travers l’écran, Anabelle confie que le cinéma est pour elle un canal de connexion au monde réel :</p>
+  <h2>🎭 Un choix de cœur et de vocation</h2>
+  <p>Portée par un désir sincère d’explorer les réalités de la vie à travers l’écran, Anabelle confie que le cinéma est pour elle un canal de connexion au monde réel :</p>
 
-    <blockquote>🗣️ « J'ai choisi ce métier pour être plus connectée au monde actif et faire plus de découvertes dans le monde du cinéma. »</blockquote>
+  <blockquote>🗣️ « J'ai choisi ce métier pour être plus connectée au monde actif et faire plus de découvertes dans le monde du cinéma. »</blockquote>
 
-    <h2>📺 À suivre dans la série "Héritiers"</h2>
-    <p>Tchida Fopi Anabelle Florile vous donne rendez-vous dans la nouvelle saison de la série Héritiers, 
+  <h2>📺 À suivre dans la série "Héritiers"</h2>
+  <p>Tchida Fopi Anabelle Florile vous donne rendez-vous dans la nouvelle saison de la série Héritiers, 
     où elle incarne un rôle touchant, engagé et marquant. Un projet qui promet de captiver les téléspectateurs 
     et d’asseoir sa place parmi les talents émergents de l’industrie cinématographique camerounaise.</p>
 
-    <blockquote>🎬 « Restez scotchés, car vous serez épatés par la nouvelle sortie de la série Héritiers ! »</blockquote>
+  <blockquote>🎬 « Restez scotchés, car vous serez épatés par la nouvelle sortie de la série Héritiers ! »</blockquote>
 
-    <p><strong>Planète Africa</strong> est fier d’accompagner cette jeune actrice dans ses premiers pas et invite tous les passionnés de cinéma africain à suivre de près sa brillante évolution.</p>
+  <p><strong>Planète Africa</strong> est fier d’accompagner cette jeune actrice dans ses premiers pas et invite tous les passionnés de cinéma africain à suivre de près sa brillante évolution.</p>
 
-    <p>📢 Tchida Anabelle est bien plus qu'une débutante : c'est une voix nouvelle, authentique, et pleine d’avenir.</p>
-  </main>
-  <footer>
-    © 2025 Planète Africa. Tous droits réservés.
-  </footer>
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById('navbar');
-      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-    }
-  </script>
+  <p>📢 Tchida Anabelle est bien plus qu'une débutante : c'est une voix nouvelle, authentique, et pleine d’avenir.</p>
+
+  <div class="article-links">
+    <a href="rosario.html">← Lire l'article précédent : Rosario</a>
+    <a href="rachel.html">← Lire aussi : Rachel</a>
+  </div>
+
+  <div class="contact-links">
+    <p>📱 <a href="https://wa.me/237689325213">Discuter sur WhatsApp</a></p>
+  </div>
+</main>
+
+<footer>
+  © 2025 Planète Africa. Tous droits réservés.
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('nav-links');
+    nav.classList.toggle('show-menu');
+  }
+</script>
 </body>
 </html>
