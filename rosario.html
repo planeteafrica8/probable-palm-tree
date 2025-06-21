@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,47 +11,68 @@
   <meta property="og:url" content="https://planeteafrica8.github.io/probable-palm-tree/rosario.html">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ18T1G119"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WJ18T1G119');
-  </script>
+
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background: #f9f9f9;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
       color: #333;
     }
     header {
+      background-color: #000;
+      color: white;
+      padding: 15px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: relative;
     }
     .logo {
+      height: 50px;
+    }
+    .brand {
+      text-align: left;
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+    .brand h1 {
+      margin: 0;
       font-size: 20px;
-      font-weight: 700;
-      text-transform: lowercase;
     }
-    .slogan {
-      font-style: italic;
-      color: #666;
+    .brand p {
+      margin: 0;
+      font-size: 12px;
+      color: #ccc;
     }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
+    nav {
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #000;
+      display: none;
+      flex-direction: column;
+      border-radius: 4px;
+      z-index: 1000;
     }
     nav a {
+      color: white;
       text-decoration: none;
-      color: #333;
-      font-weight: 500;
+      padding: 10px;
+      border-top: 1px solid #444;
+    }
+    .menu-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 24px;
+    }
+    .menu-toggle:focus {
+      outline: none;
+    }
+    .show-menu {
+      display: flex !important;
     }
     main {
       max-width: 900px;
@@ -65,6 +87,9 @@
       font-size: 28px;
       margin-bottom: 20px;
     }
+    h2 {
+      color: #cc0000;
+    }
     .article img {
       width: 100%;
       border-radius: 8px;
@@ -74,10 +99,18 @@
       line-height: 1.7;
     }
     .bold { font-weight: 600; }
+    blockquote {
+      font-style: italic;
+      color: #555;
+      margin: 20px 0;
+      padding-left: 15px;
+      border-left: 3px solid #cc0000;
+    }
     footer {
+      background-color: #222;
+      color: #fff;
       text-align: center;
       padding: 20px;
-      background-color: #f1f1f1;
       margin-top: 40px;
     }
     .article-links a {
@@ -92,74 +125,82 @@
   </style>
 </head>
 <body>
+
   <header>
-    <div>
-      <div class="logo">planète africa</div>
-      <div class="slogan">Du rêve à la réalité</div>
+    <img src="logo.png" alt="Logo Planète Africa" class="logo">
+    <div class="brand">
+      <h1>Planète Africa</h1>
+      <p>Du rêve à la réalité</p>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="actualites.html">Actualités</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="services.html">Services</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
     </nav>
-  </header>  <main class="article">
+  </header>
+
+  <main class="article">
     <h1>🎬 Portrait de Behoumie Rosario Slavia – L’Engagement au Service du Cinéma Camerounais</h1>
     <img src="rosario.jpg" alt="Photo de Rosario">
     <p><span class="bold">Nom complet :</span> Behoumie Rosario Slavia</p>
     <p><span class="bold">Date de naissance :</span> 16 janvier 1992</p>
     <p><span class="bold">Nationalité :</span> Camerounaise</p>
-    <p><span class="bold">Première apparition :</span> "Red Love" (2022), court métrage produit par Waj Prada</p><p>Avec une prestance calme et une détermination discrète, Behoumie Rosario Slavia s’impose progressivement comme l’une des actrices les plus authentiques et engagées de sa génération. Née à Yaoundé, elle réside toujours dans la capitale camerounaise où elle poursuit une carrière artistique forgée par la passion et la persévérance.</p>
+    <p><span class="bold">Première apparition :</span> "Red Love" (2022), court métrage produit par Waj Prada</p>
+    <p>Avec une prestance calme et une détermination discrète, Behoumie Rosario Slavia s’impose comme l’une des actrices les plus authentiques et engagées de sa génération.</p>
 
-<h2>🌟 Des débuts sincères et prometteurs</h2>
-<p>C’est en 2022 que Rosario fait ses premiers pas dans le 7ᵉ art, dans le court métrage <strong>"Red Love"</strong>, où elle incarne une enseignante. Une première expérience fondatrice qui confirme sa vocation.</p>
-<p>Depuis, elle enchaîne :</p>
-<ul>
-  <li><strong>2023 :</strong> "Mon passé, mon présent" – rôle de grande sœur aimante</li>
-  <li><strong>2025 :</strong> "Les filets du mariage" – rôle d’une femme cocue</li>
-  <li>Figurations dans "Pouvoir et loi" et "Indomptable" de Thomas Nguijol</li>
-</ul>
+    <h2>🌟 Des débuts sincères et prometteurs</h2>
+    <p>Elle fait ses débuts dans le court métrage <strong>"Red Love"</strong> (2022), où elle incarne une enseignante. Une première expérience fondatrice.</p>
+    <ul>
+      <li><strong>2023 :</strong> "Mon passé, mon présent"</li>
+      <li><strong>2025 :</strong> "Les filets du mariage"</li>
+      <li>Figurations : "Pouvoir et loi", "Indomptable"</li>
+    </ul>
 
-<h2>🎭 Dans la série "Héritiers"</h2>
-<p>Rosario joue <strong>Lucia</strong>, une juge ferme et intègre. Ce rôle confirme sa capacité à incarner des figures fortes et engageantes.</p>
-<blockquote>« Cette série représente une opportunité d'aller encore plus loin dans le cinéma. » – Rosario</blockquote>
+    <h2>🎭 Dans la série "Héritiers"</h2>
+    <p>Rosario incarne <strong>Lucia</strong>, une juge ferme et intègre. Un rôle fort et symbolique.</p>
+    <blockquote>« Cette série représente une opportunité d'aller encore plus loin dans le cinéma. »</blockquote>
 
-<h2>💬 Son message</h2>
-<p>Rosario considère que le cinéma est un art de transformation sociale :</p>
-<blockquote>« Le public devrait regarder cette série non pas pour le plaisir, mais pour les leçons de vie que nous procurent l’histoire racontée. »</blockquote>
+    <h2>💬 Son message</h2>
+    <blockquote>« Le public devrait regarder cette série non pas pour le plaisir, mais pour les leçons de vie. »</blockquote>
+    <blockquote>« Merci pour l’amour et les mots d’encouragement. »</blockquote>
 
-<p>Elle adresse ses remerciements à <strong>Planète Africa</strong> et à tous ses fans :</p>
-<blockquote>« Merci pour l’amour et les mots d’encouragement. »</blockquote>
+    <div class="article-links">
+      <a href="anabelle.html">← Lire l'article précédent : Anabelle</a>
+      <a href="rachel.html">← Lire aussi : Rachel</a>
+    </div>
 
-<div class="article-links">
-  <a href="anabelle.html">← Lire l'article précédent : Anabelle</a>
-  <a href="rachel.html">← Lire aussi : Rachel</a>
-</div>
+    <div class="contact-links">
+      <p>📧 <a href="mailto:planeteafrica8@gmail.com">planeteafrica8@gmail.com</a></p>
+      <p>📱 <a href="https://wa.me/237689325213">Discuter sur WhatsApp</a></p>
+    </div>
 
-<div class="contact-links">
-  <p>📧 <a href="mailto:planeteafrica8@gmail.com">planeteafrica8@gmail.com</a></p>
-  <p>📱 <a href="https://wa.me/237689325213">Discuter sur WhatsApp</a></p>
-</div>
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = 'https://planeteafrica8.github.io/probable-palm-tree/rosario.html';
+        this.page.identifier = 'rosario';
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://planeteafrica.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+  </main>
 
-<div id="disqus_thread"></div>
-<script>
-  var disqus_config = function () {
-    this.page.url = 'https://planeteafrica8.github.io/probable-palm-tree/rosario.html';
-    this.page.identifier = 'rosario';
-  };
-  (function() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://planeteafrica.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-</script>
-
-  </main>  <footer>
+  <footer>
     © 2025 Planète Africa. Tous droits réservés.
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show-menu");
+    }
+  </script>
 </body>
 </html>
