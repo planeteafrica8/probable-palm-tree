@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zoom sur le Monde - Planète Africa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #000;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+    .logo img {
+      height: 50px;
+    }
+    .slogan {
+      margin-left: 10px;
+      font-size: 14px;
+      flex-grow: 1;
+    }
+    .menu-toggle {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+      display: block;
+    }
+    nav {
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #000;
+      display: none;
+      flex-direction: column;
+      border-radius: 6px;
+      width: 180px;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      padding: 12px 15px;
+      text-decoration: none;
+      border-top: 1px solid #444;
+      font-weight: 600;
+    }
+    nav a:first-child {
+      border-top: none;
+    }
+    nav a.active, nav a:hover {
+      background-color: #c0392b;
+    }
+    nav.show-menu {
+      display: flex;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      margin: 1rem 0;
+      color: #c0392b;
+      font-size: 2.5rem;
+    }
+    @media(min-width: 768px) {
+      .menu-toggle {
+        display: none;
+      }
+      nav {
+        position: static;
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        background: none;
+      }
+      nav a {
+        border: none;
+        padding: 10px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="Logo Planète Africa" /></div>
+    <div class="slogan">Du rêve à la réalité</div>
+    <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
+    <nav id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="zoom-sur-le-monde.html" class="active">Zoom sur le Monde</a>
+      <a href="services.html">Nos services</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>🔎 Zoom Monde</h1>
+    <!-- Contenu à venir -->
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('show-menu');
+    }
+  </script>
+</body>
+</html>
